@@ -1,4 +1,3 @@
-
 // Remove all <br> and empty <p>
 const emptyLines = document.querySelectorAll("br, p");
 for (const el of emptyLines) {
@@ -22,13 +21,25 @@ for (const tt of document.querySelectorAll("tt")) {
 }
 
 // Demote Created ... paragraph
-const hgroup = document.querySelector("header hgroup");
-for (const p of document.querySelectorAll("article > header + p")) {
+const hgroup = document.querySelector("section hgroup");
+for (const p of document.querySelectorAll("hgroup + p")) {
     if (p.innerText.startsWith("Created ")) {
         hgroup.insertAdjacentHTML(
             "beforeend",
-            `<h2><time>${p.innerText.substr(8)}</time></h2>`
+            `<p><time>${p.innerText.substr(8)}</time></p>`
         );
         p.remove();
     }
+}
+
+// Convert Zim Code Blocks to Prism code blocks
+for (let code of document.querySelectorAll(".zim-object > pre > code[class]")) {
+    // Move <pre> outside of <div class="zim-object">
+    let pre = code.parentElement
+    let zimObject = pre.parentElement
+    zimObject.parentElement.insertBefore(pre, zimObject)
+    zimObject.parentElement.removeChild(zimObject)
+
+    // Prepend "lang-" to code's class
+    code.className = `lang-${code.className}`
 }

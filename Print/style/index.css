@@ -5,8 +5,19 @@
         layer(reset);
 
 /* A classless framework */
-@import url(https://cdn.jsdelivr.net/npm/water.css@2/out/water.css)
+@import url(https://cdn.simplecss.org/simple.min.css)
         layer(classless);
+
+/* List of classless CSS frameworks
+===================================
+
+| Name   | URL                                                      |
+|:------:|:---------------------------------------------------------|
+| Pico   | https://unpkg.com/@picocss/pico@latest/css/pico.min.css  |
+| Water  | https://cdn.jsdelivr.net/npm/water.css@2/out/water.css   |
+| Simple | https://cdn.simplecss.org/simple.min.css                 |
+
+*/
 
 /* The remaining CSS files are <link>-ed in the .html to avoid the FUOC
    when this theme is served with Zim's built-in web server*/

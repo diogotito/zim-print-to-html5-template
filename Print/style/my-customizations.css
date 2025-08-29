@@ -3,7 +3,7 @@
  * Overrides layer(reset), layer(class) and layer(zim-defaults)
  */
 @layer my-customizations {
-    
+
     @layer zim-overrides {
         div.zim-object:has(pre) {
             border-style: unset;
@@ -21,22 +21,4 @@
         overflow-x: none !important;
     }
 
-    header h1 {
-        display: inline-block;
-    }
-
-    header h2 {
-        float: right;
-    }
-
-    header h2 time {
-        background-color: transparent;
-        font-style: italic;
-        vertical-align: middle;
-        color: var(--text-muted);
-    }
-
-    header {
-        /*   border-bottom: 1px solid var(--text-muted); */
-    }
 }

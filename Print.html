@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>[% title %]</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Generator" content="[% generator.name %]" />
-    <style>
-      [% INCLUDE "style/index.css" %]
-      [% INCLUDE "style/zim-defaults.css" %]
-      [% INCLUDE "style/my-customizations.css" %]
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/prismjs@1.29.0/themes/prism.min.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/prismjs@1.29.0/themes/prism-okaidia.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>[% title %]</title>
   </head>
 
-  [% options.line_breaks = 'remove' %] [% options.empty_lines = 'remove' %]
-
   <body>
-    <!-- Wiki content -->
-
-    [% FOR page IN pages %]
-    <article>
-      <header>
+    <main class="container">
+      [% FOR page IN pages %]
+      <section>
         <hgroup>
           <h1>[% page.heading %]</h1>
         </hgroup>
-      </header>
-      [% page.body %]
-    </article>
-    <!-- page.content -->
-    [% END %]
-
-    <!-- End wiki content -->
+        [% page.body %]
+      </section>
+      [% END %]
+    </main>
 
     <script>
-      [% INCLUDE "js/code-blocks.js" %]
       [% INCLUDE "js/transform-zim-html.js" %]
     </script>
+    <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>
 </html>
