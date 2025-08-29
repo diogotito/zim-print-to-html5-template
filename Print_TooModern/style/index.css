@@ -1,0 +1,12 @@
+@layer reset, classless, zim-defaults, my-customizations;
+
+/* CSS reset */
+@import url(https://unpkg.com/normalize.css/normalize.css)
+        layer(reset);
+
+/* A classless framework */
+@import url(https://cdn.jsdelivr.net/npm/water.css@2/out/water.css)
+        layer(classless);
+
+/* The remaining CSS files are <link>-ed in the .html to avoid the FUOC
+   when this theme is served with Zim's built-in web server*/
