@@ -27,7 +27,7 @@ and depends on your internet connection.
 
 <!-- width="2269" height="1050" -->
 <!-- alt="Zim's default HTML template used for printing vs this HTML template" -->
-<img alt="Zim's default HTML template used for printing vs this HTML template" src="https://github.com/user-attachments/assets/98804b31-2ac6-4b74-95b1-dc723b9a177d" />
+<img alt="Zim's default HTML template used for printing vs this HTML template" src="https://github.com/user-attachments/assets/6444647c-8463-424e-9ef5-0bc8a18301b1" />
 
 <!--
 > I actually think this looks a bit too "modern" for my tastes
