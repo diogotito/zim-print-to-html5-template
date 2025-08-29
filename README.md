@@ -25,6 +25,17 @@ That means you just need to copy these files to use it,
 but the fancier presentation appears with a delay
 and depends on your internet connection.
 
+<!-- width="2269" height="1050" -->
+<!-- alt="Zim's default HTML template used for printing vs this HTML template" -->
+<img alt="Zim's default HTML template used for printing vs this HTML template" src="https://github.com/user-attachments/assets/98804b31-2ac6-4b74-95b1-dc723b9a177d" />
+
+<!--
+> I actually think this looks a bit too "modern" for my tastes
+as it loses a lot of information density
+and the resulting aesthetics feel a bit bland,
+but I made this as a proof of concept
+-->
+
 ## Usage
 
 Put the files of this repo in the directory for HTML templates in your Zimwiki.
