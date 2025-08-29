@@ -1,0 +1,13 @@
+[% options.line_breaks = 'remove' %]
+[% options.empty_lines = 'remove' %]
+
+<link rel="stylesheet" href="[% resource('style.css') %]" />
+<style>
+    [% INCLUDE "style/pico/pico.css" %]
+</style>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+[% INCLUDE "style/my-customizations.css" %]
+
+
+[% INCLUDE "js/code-blocks.js" %]
