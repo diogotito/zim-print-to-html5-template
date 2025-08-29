@@ -1,7 +1,7 @@
 # Modernized Zim Print HTML template
 
 This theme is a hack I made a few years ago
-so that "Print to HTML" (Ctrl+P) in [Zim](https://zim-wiki.org/)
+so that <kbd>Ctrl+P</kbd> "Print to HTML" in [Zim](https://zim-wiki.org/)
 would generate a more modern-looking web page
 instead of using the default HTML 4 template.
 
