@@ -3,6 +3,14 @@
  * Overrides layer(reset), layer(class) and layer(zim-defaults)
  */
 @layer my-customizations {
+    
+    @layer zim-overrides {
+        div.zim-object:has(pre) {
+            border-style: unset;
+            border-width: unset;
+        }
+    }
+
     snippet-highlight code {
         border: none;
     }

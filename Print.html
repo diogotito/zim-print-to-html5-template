@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>[% title %]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Generator" content="[% generator.name %]" />
+    <style>
+      [% INCLUDE "style/index.css" %]
+      [% INCLUDE "style/zim-defaults.css" %]
+      [% INCLUDE "style/my-customizations.css" %]
+    </style>
+  </head>
+
+  [% options.line_breaks = 'remove' %] [% options.empty_lines = 'remove' %]
+
+  <body>
+    <!-- Wiki content -->
+
+    [% FOR page IN pages %]
+    <article>
+      <header>
+        <hgroup>
+          <h1>[% page.heading %]</h1>
+        </hgroup>
+      </header>
+      [% page.body %]
+    </article>
+    <!-- page.content -->
+    [% END %]
+
+    <!-- End wiki content -->
+
+    <script>
+      [% INCLUDE "js/code-blocks.js" %]
+      [% INCLUDE "js/transform-zim-html.js" %]
+    </script>
+  </body>
+</html>

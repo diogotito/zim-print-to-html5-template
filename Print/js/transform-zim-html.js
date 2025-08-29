@@ -7,6 +7,13 @@ for (const el of emptyLines) {
     }
 }
 
+// Turn all <u> into <mark>
+for (const u of document.querySelectorAll("u")) {
+    const mark = document.createElement("mark");
+    mark.innerHTML = u.innerHTML;
+    u.replaceWith(mark);
+}
+
 // Turn all <tt> into <code>
 for (const tt of document.querySelectorAll("tt")) {
     const code = document.createElement("code");

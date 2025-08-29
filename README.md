@@ -1,4 +1,4 @@
-# Print_TooModern Zim HTML template
+# Modernized Zim Print HTML template
 
 This theme is a hack I made a few years ago
 so that "Print to HTML" (Ctrl+P) in [Zim](https://zim-wiki.org/)
